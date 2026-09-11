@@ -64,35 +64,35 @@ textarea.input{min-height:92px;resize:vertical}
 .rules{display:grid;gap:9px}.rule{display:flex;justify-content:space-between;gap:12px;padding:12px;border-radius:18px;background:#0d1116;border:1px solid var(--line)}.rule b{color:var(--gold)}
 
 .hero-note{margin:14px auto 0;max-width:480px;padding:11px 14px;border-radius:19px;background:rgba(255,31,45,.08);border:1px solid rgba(255,31,45,.22);color:#ffb0b6;font-size:12px;line-height:1.45}
-.progress{display:flex;justify-content:center;gap:8px;margin:10px 0 4px}.progress span{width:38px;height:5px;border-radius:999px;background:#29313d}.progress span.on{background:linear-gradient(90deg,#ff1f2d,#ff6b73)}
-.summary-box{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.summary-box div{background:#0d1116;border:1px solid var(--line);border-radius:19px;padding:13px}
-.summary-box div:last-child{grid-column:1/-1}
-.summary-box span{display:block;color:var(--muted);font-size:11px;font-weight:700}.summary-box strong{display:block;margin-top:5px;font-size:19px}
-.security{display:flex;gap:10px;align-items:center;margin-top:12px;color:#8f99a7;font-size:11.5px}
-.security i{font-style:normal;width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:rgba(255,31,45,.10);color:var(--red)}
+.progress { display : flex ;justify-content:center;gap:8px; margin : 10px 0 4px } .progress span { width: 38px ; height: 5px ;border-radius : 999px ;background:#29313d}.progress span.on{background: linear -gradient(90deg,#ff1f2d,#ff6b73)}
+.summary - box { display : grid ; grid - template - columns : 1fr 1fr ; gap : 10px }
+.summary - boxdiv { background : # 0d1116 ; border : 1px solid var ( -- line ) ; border -radius : 19px ; padding : 13px } 
+. resumo - box div : last - child { grid - column : 1/ -1 } 
+.summary - box span { display : block ; color : var ( -- muted );font-size : 11px ; font-weight : 700 } .summary - box strong{display: block ; margin -top: 5px ;font-size:19px } 
+. s e c u r i t a t y { d i s p l a y : flex;gap:10px;align-items:center;margin-top:12px;color:#8f99a7;font-size:11.5px}
+. s e c u r i t y i { f o n t - s t y l e :normal;width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:rgba(255,31,45,.10);color:var(--red)} 
 
 
-.brand-logo{
-  width:min(155px,46vw);
-  aspect-ratio:1/1;
-  height:auto;
-  display:block;
-  margin:0 auto 10px;
-  border-radius:50%;
-  object-fit:cover;
-  clip-path:circle(50%);
-  filter:drop-shadow(0 10px 24px rgba(244,183,64,.25));
-  animation:logoFloat 4s ease-in-out infinite;
+. marca - logotipo {​​​​​​​
+  largura : min (155px, 46vw ) ;
+  proporção de aspecto : 1/1 ;​​​​​​​
+  altura : automática ;​​​
+  exibir : bloco ;​​​​
+  margem : 0 auto 10px ;​
+  raio da borda : 50 % ;​​​​​​​
+  obj ec t - ajuste : capa ;​​​
+  c i p - caminho : círculo ( 50%) ;
+  filtro : sombra-projetada(0 10px 24px rgba(244,183,64, .25 ) ) ;
+  animação : logoFloat 4s ease -in - out infinito ;
 }
-@keyframes logoFloat{
-  0%,100%{transform:translateY(0) scale(1)}
-  50%{transform:translateY(-5px) scale(1.02)}
+@ key frames log o Float {​​​​​​​​​​​​​ 
+  0 % , 100 % { transformar : translateY ( 0 ) escala ( 1 ) }​
+  5 0 % { transform : translateY ( -5px) scale ( 1.02 ) }
 }
-body:before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
-  background:
-    radial-gradient(circle at 15% 10%,rgba(255,31,45,.08),transparent 28%),
+corpo : antes {​
+  conteúdo : "";posição:fixa;inserção:0;eventos-ponteiro:nenhum;índice - z : -1 ;
+  fundo :​​​​​​​​​
+    r a d i a l - gradiente ( circle a 1 5 % 1 0 % , r g b a ( 2 5 5 , 3 1 , 4 5 , . 0 8 ) , trans p a n s p a r e n t 2 8 % ) ,​​​​​​​​​​​​​    
     radial-gradient(circle at 85% 18%,rgba(255,31,45,.08),transparent 30%);
   animation:bgPulse 7s ease-in-out infinite alternate;
 }
